@@ -14,7 +14,7 @@ const contactSchema = z.object({
 export type ContactFormData = z.infer<typeof contactSchema>;
 
 export const submitContact = createServerFn({ method: "POST" })
-  .inputValidator((data) => contactSchema.parse(data))
+  .validator((data) => contactSchema.parse(data))
   .handler(async ({ data }) => {
     const SUPABASE_URL = process.env["SUPABASE_URL"];
     const SUPABASE_PUBLISHABLE_KEY = process.env["SUPABASE_PUBLISHABLE_KEY"];
