@@ -54,10 +54,11 @@ function ContactPage() {
   const onSubmit = async (data: ContactFormValues) => {
     setError(null);
     try {
-      await submit(data);
+      await submit({ data });
       setSubmitted(true);
       reset();
     } catch (err) {
+      console.error("Error enviando formulario:", err);
       setError(err instanceof Error ? err.message : "Ocurrió un error al enviar el mensaje.");
     }
   };
