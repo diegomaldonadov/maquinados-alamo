@@ -78,10 +78,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "MetalMecánica Industrial" },
+      { title: "Maquinados Alamo" },
       { name: "description", content: "Servicios de maquinado CNC, fresadora industrial, torno y soldadura con precisión y calidad." },
-      { name: "author", content: "MetalMecánica Industrial" },
-      { property: "og:title", content: "MetalMecánica Industrial" },
+      { name: "author", content: "Maquinados Alamo" },
+      { property: "og:title", content: "Maquinados Alamo" },
       { property: "og:description", content: "Servicios de maquinado CNC, fresadora industrial, torno y soldadura con precisión y calidad." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -135,7 +135,7 @@ function Header() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-2 text-lg font-bold tracking-tight text-foreground">
           <Cog className="h-6 w-6 text-primary" />
-          <span>MetalMecánica Industrial</span>
+          <span>Maquinados Alamo</span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -202,7 +202,7 @@ function Footer() {
           <div>
             <div className="flex items-center gap-2 text-lg font-bold text-foreground">
               <Cog className="h-6 w-6 text-primary" />
-              <span>MetalMecánica Industrial</span>
+              <span>Maquinados Alamo</span>
             </div>
             <p className="mt-3 text-sm text-muted-foreground">
               Precisión en maquinado CNC, fresado, torno y soldadura para la industria.
@@ -243,7 +243,7 @@ function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} MetalMecánica Industrial. Todos los derechos reservados.
+          © {new Date().getFullYear()} Maquinados Alamo. Todos los derechos reservados.
         </div>
       </div>
     </footer>
