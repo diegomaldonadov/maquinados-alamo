@@ -54,7 +54,7 @@ function ContactPage() {
   const onSubmit = async (data: ContactFormValues) => {
     setError(null);
     try {
-      await submit({ data });
+      await submit(data);
       setSubmitted(true);
       reset();
     } catch (err) {
