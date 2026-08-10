@@ -121,7 +121,7 @@ function RootShell({ children }: { children: ReactNode }) {
 }
 
 function Header() {
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   const navLinks = [
     { to: "/", label: "Inicio" },
