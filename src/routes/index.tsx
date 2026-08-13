@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, CheckCircle2, Cog, Flame, Settings, Wrench } from "lucide-react";
+import { ArrowRight, Cog, Flame, Settings, Wrench } from "lucide-react";
 import heroImage from "../assets/hero-cnc.jpg";
 
 export const Route = createFileRoute("/")({
