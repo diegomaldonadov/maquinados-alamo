@@ -80,27 +80,12 @@ function HomePage() {
           </div>
 
           <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            <ServiceCard
-              icon={<Cog className="h-8 w-8" />}
-              title="Maquinado CNC"
-              description="Centros de mecanizado CNC de 3 y 5 ejes para piezas complejas con tolerancias ajustadas."
-            />
-            <ServiceCard
-              icon={<Wrench className="h-8 w-8" />}
-              title="Fresadora Industrial"
-              description="Fresado de alta precisión para moldes, matrices y componentes de gran formato."
-            />
-            <ServiceCard
-              icon={<Settings className="h-8 w-8" />}
-              title="Torno"
-              description="Torno CNC y convencional para piezas cilíndricas, roscas y ejes de alta resistencia."
-            />
-            <ServiceCard
-              icon={<Flame className="h-8 w-8" />}
-              title="Soldadura"
-              description="Soldadura MIG, TIG y arco para ensambles, reparaciones y estructuras metálicas."
-            />
+            <ServiceCard icon={<Cog className="h-8 w-8" />} title="Maquinado CNC" />
+            <ServiceCard icon={<Wrench className="h-8 w-8" />} title="Fresadora Industrial" />
+            <ServiceCard icon={<Settings className="h-8 w-8" />} title="Torno" />
+            <ServiceCard icon={<Flame className="h-8 w-8" />} title="Soldadura" />
           </div>
+
         </div>
       </section>
 
