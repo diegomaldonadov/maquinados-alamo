@@ -100,27 +100,11 @@ function HomePage() {
               <p className="mt-4 text-lg text-muted-foreground">
                 Más de 7 años fabricando piezas para sectores automotriz, aeroespacial, energético y construcción.
               </p>
-
-              <ul className="mt-8 space-y-4">
-                {[
-                  "Tolerancias de ±0.01 mm en acabados críticos",
-                  "Materiales: acero, aluminio, bronce, titanio y plásticos de ingeniería",
-                  "Entregas just-in-time y lotes flexibles",
-                  "Inspección dimensional con equipos de metrología",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" />
-                    <span className="text-foreground">{item}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
-            <div className="grid gap-6 sm:grid-cols-2">
+            <div className="flex justify-center">
               <StatCard value="7+" label="Años de experiencia" />
-              <StatCard value="500+" label="Clientes atendidos" />
-              <StatCard value="50+" label="Máquinas CNC" />
-              <StatCard value="24h" label="Respuesta de cotización" />
             </div>
+
           </div>
         </div>
       </section>
