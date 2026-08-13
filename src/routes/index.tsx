@@ -37,8 +37,9 @@ function HomePage() {
           <div className="max-w-2xl">
             <div className="mb-6 inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
               <Settings className="mr-2 h-4 w-4" />
-              Precisión industrial desde 2008
+              Precisión industrial desde 2019
             </div>
+
             <h1 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
               Maquinado CNC con{" "}
               <span className="text-primary">precisión milimétrica</span>
@@ -112,8 +113,9 @@ function HomePage() {
                 ¿Por qué elegirnos?
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                Más de 15 años fabricando piezas para sectores automotriz, aeroespacial, energético y construcción.
+                Más de 7 años fabricando piezas para sectores automotriz, aeroespacial, energético y construcción.
               </p>
+
               <ul className="mt-8 space-y-4">
                 {[
                   "Tolerancias de ±0.01 mm en acabados críticos",
@@ -129,7 +131,7 @@ function HomePage() {
               </ul>
             </div>
             <div className="grid gap-6 sm:grid-cols-2">
-              <StatCard value="15+" label="Años de experiencia" />
+              <StatCard value="7+" label="Años de experiencia" />
               <StatCard value="500+" label="Clientes atendidos" />
               <StatCard value="50+" label="Máquinas CNC" />
               <StatCard value="24h" label="Respuesta de cotización" />

@@ -43,6 +43,9 @@
   --color-steel-foreground: var(--steel-foreground);
   --color-orange: var(--orange);
   --color-orange-foreground: var(--orange-foreground);
+  --color-navy: var(--navy);
+  --color-navy-foreground: var(--navy-foreground);
+  --color-navy-muted: var(--navy-muted);
 
   --font-sans: var(--font-sans);
   --font-display: var(--font-display);
@@ -54,32 +57,38 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
 
-  /* Industrial dark palette */
-  --background: oklch(0.145 0.02 260);
-  --foreground: oklch(0.95 0.01 250);
-  --card: oklch(0.18 0.02 260);
-  --card-foreground: oklch(0.95 0.01 250);
-  --popover: oklch(0.18 0.02 260);
-  --popover-foreground: oklch(0.95 0.01 250);
-  --primary: oklch(0.65 0.18 45);
-  --primary-foreground: oklch(0.1 0.02 45);
-  --secondary: oklch(0.22 0.03 260);
-  --secondary-foreground: oklch(0.9 0.01 250);
-  --muted: oklch(0.25 0.03 260);
-  --muted-foreground: oklch(0.65 0.02 250);
-  --accent: oklch(0.65 0.18 45);
-  --accent-foreground: oklch(0.1 0.02 45);
+  /* Light industrial palette */
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.18 0.02 260);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.18 0.02 260);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0.02 260);
+  --primary: oklch(0.62 0.18 45);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.97 0.005 260);
+  --secondary-foreground: oklch(0.22 0.02 260);
+  --muted: oklch(0.96 0.005 260);
+  --muted-foreground: oklch(0.48 0.02 260);
+  --accent: oklch(0.95 0.02 45);
+  --accent-foreground: oklch(0.22 0.02 260);
   --destructive: oklch(0.55 0.2 25);
   --destructive-foreground: oklch(0.98 0.01 250);
-  --border: oklch(1 0 0 / 12%);
-  --input: oklch(1 0 0 / 12%);
-  --ring: oklch(0.65 0.18 45);
+  --border: oklch(0.9 0.008 260);
+  --input: oklch(0.88 0.008 260);
+  --ring: oklch(0.62 0.18 45);
 
   --steel: oklch(0.55 0.04 250);
-  --steel-foreground: oklch(0.1 0.01 250);
-  --orange: oklch(0.65 0.18 45);
-  --orange-foreground: oklch(0.1 0.02 45);
+  --steel-foreground: oklch(1 0 0);
+  --orange: oklch(0.62 0.18 45);
+  --orange-foreground: oklch(1 0 0);
+
+  /* Navy bar */
+  --navy: oklch(0.235 0.045 265);
+  --navy-foreground: oklch(0.97 0.01 250);
+  --navy-muted: oklch(0.78 0.02 250);
 }
+
 
 @utility grain {
   position: relative;
