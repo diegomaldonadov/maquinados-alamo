@@ -19,9 +19,9 @@ const gallery = [work01, work02, work03, work04, work05, work06, work10, work11,
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Servicios — MetalMecánica Industrial" },
+      { title: "Servicios — Servicios y Maquinados Alamo" },
       { name: "description", content: "Maquinado CNC, fresadora industrial, torno CNC y soldadura MIG/TIG con precisión industrial." },
-      { property: "og:title", content: "Servicios — MetalMecánica Industrial" },
+      { property: "og:title", content: "Servicios — Servicios y Maquinados Alamo" },
       { property: "og:description", content: "Maquinado CNC, fresadora industrial, torno CNC y soldadura MIG/TIG con precisión industrial." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

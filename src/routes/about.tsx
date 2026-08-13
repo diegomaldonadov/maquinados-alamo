@@ -4,10 +4,10 @@ import { ArrowRight, Award, Shield, Users, Clock } from "lucide-react";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "Nosotros — MetalMecánica Industrial" },
-      { name: "description", content: "Conoce a MetalMecánica Industrial: más de 15 años de experiencia en maquinado CNC, fresado, torno y soldadura." },
-      { property: "og:title", content: "Nosotros — MetalMecánica Industrial" },
-      { property: "og:description", content: "Conoce a MetalMecánica Industrial: más de 15 años de experiencia en maquinado CNC, fresado, torno y soldadura." },
+      { title: "Nosotros — Servicios y Maquinados Alamo" },
+      { name: "description", content: "Conoce a Servicios y Maquinados Alamo: más de 7 años de experiencia en maquinado CNC, fresado, torno y soldadura." },
+      { property: "og:title", content: "Nosotros — Servicios y Maquinados Alamo" },
+      { property: "og:description", content: "Conoce a Servicios y Maquinados Alamo: más de 7 años de experiencia en maquinado CNC, fresado, torno y soldadura." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -34,7 +34,7 @@ function AboutPage() {
             <h2 className="text-2xl font-bold text-card-foreground">Nuestra historia</h2>
             <div className="mt-6 space-y-4 text-muted-foreground">
               <p>
-                Desde 2008, MetalMecánica Industrial ha crecido de un pequeño taller de reparación a
+                Desde 2019, Servicios y Maquinados Alamo ha crecido de un pequeño taller de reparación a
                 un centro de manufactura con más de 50 máquinas CNC y un equipo de operadores certificados.
               </p>
               <p>
