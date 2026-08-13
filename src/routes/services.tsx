@@ -1,6 +1,20 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Cog, Flame, Settings, Wrench, ArrowRight } from "lucide-react";
 import { Link } from "@tanstack/react-router";
+import work01 from "@/assets/gallery/work-01.png.asset.json";
+import work02 from "@/assets/gallery/work-02.png.asset.json";
+import work03 from "@/assets/gallery/work-03.png.asset.json";
+import work04 from "@/assets/gallery/work-04.png.asset.json";
+import work05 from "@/assets/gallery/work-05.png.asset.json";
+import work06 from "@/assets/gallery/work-06.png.asset.json";
+import work10 from "@/assets/gallery/work-10.png.asset.json";
+import work11 from "@/assets/gallery/work-11.png.asset.json";
+import work12 from "@/assets/gallery/work-12.png.asset.json";
+
+const gallery = [work01, work02, work03, work04, work05, work06, work10, work11, work12].map(
+  (a) => a.url,
+);
+
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -66,6 +80,29 @@ function ServicesPage() {
             </div>
           ))}
         </div>
+
+        <section className="mt-20">
+          <h2 className="text-center text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            Nuestro trabajo
+          </h2>
+          <div className="mt-10 grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-3">
+            {gallery.map((src, i) => (
+              <div
+                key={src}
+                className="overflow-hidden rounded-xl border border-border bg-card"
+              >
+                <img
+                  src={src}
+                  alt={`Pieza maquinada ${i + 1} por Servicios y Maquinados Alamo`}
+                  loading="lazy"
+                  className="aspect-[4/3] w-full object-cover transition-transform duration-300 hover:scale-105"
+                />
+              </div>
+            ))}
+          </div>
+        </section>
+
+
 
         <div className="mt-16 rounded-2xl border border-border bg-secondary p-8 text-center sm:p-12">
           <h2 className="text-2xl font-bold text-foreground sm:text-3xl">
