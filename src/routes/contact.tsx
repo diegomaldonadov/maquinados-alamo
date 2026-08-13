@@ -15,9 +15,9 @@ import { Label } from "@/components/ui/label";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contacto — MetalMecánica Industrial" },
+      { title: "Contacto — Servicios y Maquinados Alamo" },
       { name: "description", content: "Solicita cotización de maquinado CNC, fresado, torno o soldadura. Te respondemos en menos de 24 horas." },
-      { property: "og:title", content: "Contacto — MetalMecánica Industrial" },
+      { property: "og:title", content: "Contacto — Servicios y Maquinados Alamo" },
       { property: "og:description", content: "Solicita cotización de maquinado CNC, fresado, torno o soldadura. Te respondemos en menos de 24 horas." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
