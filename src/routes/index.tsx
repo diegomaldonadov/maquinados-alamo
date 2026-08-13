@@ -37,8 +37,9 @@ function HomePage() {
           <div className="max-w-2xl">
             <div className="mb-6 inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
               <Settings className="mr-2 h-4 w-4" />
-              Precisión industrial desde 2008
+              Precisión industrial desde 2019
             </div>
+
             <h1 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
               Maquinado CNC con{" "}
               <span className="text-primary">precisión milimétrica</span>
