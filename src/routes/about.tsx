@@ -72,20 +72,13 @@ function AboutPage() {
           </div>
         </div>
 
-        <div className="mt-16 grid gap-8 sm:grid-cols-3">
-          <div className="rounded-xl border border-border bg-secondary p-6 text-center">
-            <div className="text-4xl font-extrabold text-primary">2008</div>
-            <div className="mt-1 text-sm text-muted-foreground">Año de fundación</div>
-          </div>
-          <div className="rounded-xl border border-border bg-secondary p-6 text-center">
-            <div className="text-4xl font-extrabold text-primary">50+</div>
-            <div className="mt-1 text-sm text-muted-foreground">Máquinas CNC</div>
-          </div>
-          <div className="rounded-xl border border-border bg-secondary p-6 text-center">
-            <div className="text-4xl font-extrabold text-primary">5</div>
-            <div className="mt-1 text-sm text-muted-foreground">Sectores atendidos</div>
+        <div className="mt-16 flex justify-center">
+          <div className="w-full max-w-sm rounded-xl border border-border bg-secondary p-8 text-center">
+            <div className="text-4xl font-extrabold text-primary">7+</div>
+            <div className="mt-1 text-sm text-muted-foreground">Años de experiencia</div>
           </div>
         </div>
+
 
         <div className="mt-16 text-center">
           <Link
