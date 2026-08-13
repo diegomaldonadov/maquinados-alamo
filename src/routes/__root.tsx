@@ -132,9 +132,9 @@ function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-navy bg-navy/95 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link to="/" className="flex items-center gap-2 text-lg font-bold tracking-tight text-foreground">
+        <Link to="/" className="flex items-center gap-2 text-lg font-bold tracking-tight text-navy-foreground">
           <img src={logoAsset.url} alt="Logo Servicios y Maquinados Alamo" className="h-9 w-9 rounded-full bg-white p-0.5" width={36} height={36} />
           <span>Servicios y Maquinados Alamo</span>
         </Link>
@@ -145,7 +145,7 @@ function Header() {
               key={link.to}
               to={link.to}
               activeProps={{ className: "text-primary" }}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              className="text-sm font-medium text-navy-muted transition-colors hover:text-navy-foreground"
             >
               {link.label}
             </Link>
@@ -159,7 +159,7 @@ function Header() {
         </nav>
 
         <button
-          className="inline-flex items-center justify-center rounded-md p-2 text-foreground md:hidden"
+          className="inline-flex items-center justify-center rounded-md p-2 text-navy-foreground md:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? "Cerrar menú" : "Abrir menú"}
         >
@@ -168,7 +168,7 @@ function Header() {
       </div>
 
       {mobileOpen && (
-        <div className="border-t border-border bg-background px-4 py-4 md:hidden">
+        <div className="border-t border-white/10 bg-navy px-4 py-4 md:hidden">
           <nav className="flex flex-col gap-3">
             {navLinks.map((link) => (
               <Link
@@ -176,7 +176,7 @@ function Header() {
                 to={link.to}
                 onClick={() => setMobileOpen(false)}
                 activeProps={{ className: "text-primary" }}
-                className="text-base font-medium text-muted-foreground transition-colors hover:text-foreground"
+                className="text-base font-medium text-navy-muted transition-colors hover:text-navy-foreground"
               >
                 {link.label}
               </Link>
@@ -192,6 +192,7 @@ function Header() {
         </div>
       )}
     </header>
+
   );
 }
 
