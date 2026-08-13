@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Cog, Flame, Settings, Wrench, CheckCircle2, ArrowRight } from "lucide-react";
+import { Cog, Flame, Settings, Wrench, ArrowRight } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/services")({
@@ -22,57 +22,21 @@ function ServicesPage() {
       id: "cnc",
       icon: <Cog className="h-8 w-8" />,
       title: "Maquinado CNC",
-      shortDescription:
-        "Centros de mecanizado CNC de 3 y 5 ejes para piezas complejas, prototipos y producción en serie.",
-      features: [
-        "Mecanizado de 3, 4 y 5 ejes",
-        "Tolerancias de ±0.01 mm",
-        "Acabados superficiales Ra 0.8",
-        "Materiales: acero, aluminio, titanio, plásticos",
-        "Prototipos y lotes de producción",
-      ],
     },
     {
       id: "milling",
       icon: <Wrench className="h-8 w-8" />,
       title: "Fresadora Industrial",
-      shortDescription:
-        "Fresado de alta precisión para moldes, matrices, piezas de gran formato y superficies complejas.",
-      features: [
-        "Fresadoras verticales y horizontales",
-        "Mesa de trabajo hasta 2,000 mm",
-        "Moldes y matrices de inyección",
-        "Ranurado, contorneado y taladrado",
-        "Reparación de componentes industriales",
-      ],
     },
     {
       id: "lathe",
       icon: <Settings className="h-8 w-8" />,
       title: "Torno",
-      shortDescription:
-        "Torno CNC y convencional para piezas cilíndricas, ejes, roscas, bujes y componentes de transmisión.",
-      features: [
-        "Torno CNC de alta velocidad",
-        "Diámetros hasta 500 mm",
-        "Ejes, bujes, roscas y engranes",
-        "Acabados de precisión",
-        "Producción de repuestos industriales",
-      ],
     },
     {
       id: "welding",
       icon: <Flame className="h-8 w-8" />,
       title: "Soldadura",
-      shortDescription:
-        "Soldadura MIG, TIG y arco para ensambles, reparaciones, estructuras y trabajos especiales.",
-      features: [
-        "Soldadura MIG/MAG y TIG",
-        "Soldadura por arco eléctrico",
-        "Acero inoxidable, aluminio y acero al carbono",
-        "Reparación y reconstrucción de piezas",
-        "Pruebas de hermeticidad y penetrantes",
-      ],
     },
   ];
 
@@ -99,15 +63,6 @@ function ServicesPage() {
                 {service.icon}
               </div>
               <h2 className="mt-6 text-2xl font-bold text-card-foreground">{service.title}</h2>
-              <p className="mt-3 text-muted-foreground">{service.shortDescription}</p>
-              <ul className="mt-6 space-y-3">
-                {service.features.map((feature) => (
-                  <li key={feature} className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" />
-                    <span className="text-sm text-card-foreground">{feature}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
           ))}
         </div>
