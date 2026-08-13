@@ -57,7 +57,7 @@ function ServicesPage() {
             <div
               key={service.id}
               id={service.id}
-              className="rounded-2xl border border-border bg-card p-8 transition-colors hover:border-primary/50"
+              className="flex flex-col items-center justify-center rounded-2xl border border-border bg-card p-12 text-center transition-colors hover:border-primary/50"
             >
               <div className="inline-flex rounded-xl bg-primary/10 p-4 text-primary">
                 {service.icon}
