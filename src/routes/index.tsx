@@ -151,23 +151,15 @@ function HomePage() {
   );
 }
 
-function ServiceCard({
-  icon,
-  title,
-  description,
-}: {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-}) {
+function ServiceCard({ icon, title }: { icon: React.ReactNode; title: string }) {
   return (
-    <div className="group rounded-xl border border-border bg-card p-6 transition-colors hover:border-primary/50">
+    <div className="group flex flex-col items-center justify-center rounded-xl border border-border bg-card p-8 text-center transition-colors hover:border-primary/50">
       <div className="inline-flex rounded-lg bg-primary/10 p-3 text-primary">{icon}</div>
       <h3 className="mt-4 text-xl font-semibold text-card-foreground">{title}</h3>
-      <p className="mt-2 text-sm text-card-foreground/70">{description}</p>
     </div>
   );
 }
+
 
 function StatCard({ value, label }: { value: string; label: string }) {
   return (
