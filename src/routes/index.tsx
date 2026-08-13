@@ -131,7 +131,7 @@ function HomePage() {
               </ul>
             </div>
             <div className="grid gap-6 sm:grid-cols-2">
-              <StatCard value="15+" label="Años de experiencia" />
+              <StatCard value="7+" label="Años de experiencia" />
               <StatCard value="500+" label="Clientes atendidos" />
               <StatCard value="50+" label="Máquinas CNC" />
               <StatCard value="24h" label="Respuesta de cotización" />
