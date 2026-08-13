@@ -113,8 +113,9 @@ function HomePage() {
                 ¿Por qué elegirnos?
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                Más de 15 años fabricando piezas para sectores automotriz, aeroespacial, energético y construcción.
+                Más de 7 años fabricando piezas para sectores automotriz, aeroespacial, energético y construcción.
               </p>
+
               <ul className="mt-8 space-y-4">
                 {[
                   "Tolerancias de ±0.01 mm en acabados críticos",
