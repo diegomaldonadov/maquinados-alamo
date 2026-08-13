@@ -80,27 +80,12 @@ function HomePage() {
           </div>
 
           <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            <ServiceCard
-              icon={<Cog className="h-8 w-8" />}
-              title="Maquinado CNC"
-              description="Centros de mecanizado CNC de 3 y 5 ejes para piezas complejas con tolerancias ajustadas."
-            />
-            <ServiceCard
-              icon={<Wrench className="h-8 w-8" />}
-              title="Fresadora Industrial"
-              description="Fresado de alta precisión para moldes, matrices y componentes de gran formato."
-            />
-            <ServiceCard
-              icon={<Settings className="h-8 w-8" />}
-              title="Torno"
-              description="Torno CNC y convencional para piezas cilíndricas, roscas y ejes de alta resistencia."
-            />
-            <ServiceCard
-              icon={<Flame className="h-8 w-8" />}
-              title="Soldadura"
-              description="Soldadura MIG, TIG y arco para ensambles, reparaciones y estructuras metálicas."
-            />
+            <ServiceCard icon={<Cog className="h-8 w-8" />} title="Maquinado CNC" />
+            <ServiceCard icon={<Wrench className="h-8 w-8" />} title="Fresadora Industrial" />
+            <ServiceCard icon={<Settings className="h-8 w-8" />} title="Torno" />
+            <ServiceCard icon={<Flame className="h-8 w-8" />} title="Soldadura" />
           </div>
+
         </div>
       </section>
 
@@ -166,23 +151,15 @@ function HomePage() {
   );
 }
 
-function ServiceCard({
-  icon,
-  title,
-  description,
-}: {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-}) {
+function ServiceCard({ icon, title }: { icon: React.ReactNode; title: string }) {
   return (
-    <div className="group rounded-xl border border-border bg-card p-6 transition-colors hover:border-primary/50">
+    <div className="group flex flex-col items-center justify-center rounded-xl border border-border bg-card p-8 text-center transition-colors hover:border-primary/50">
       <div className="inline-flex rounded-lg bg-primary/10 p-3 text-primary">{icon}</div>
       <h3 className="mt-4 text-xl font-semibold text-card-foreground">{title}</h3>
-      <p className="mt-2 text-sm text-card-foreground/70">{description}</p>
     </div>
   );
 }
+
 
 function StatCard({ value, label }: { value: string; label: string }) {
   return (
