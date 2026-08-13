@@ -5,9 +5,9 @@ import heroImage from "../assets/hero-cnc.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Maquinados Alamo — Maquinado CNC, Fresado, Torno y Soldadura" },
+      { title: "Servicios y Maquinados Alamo — Maquinado CNC, Fresado, Torno y Soldadura" },
       { name: "description", content: "Servicios industriales de maquinado CNC, fresadora, torno y soldadura con precisión milimétrica. Cotiza tu proyecto en Monterrey." },
-      { property: "og:title", content: "Maquinados Alamo — Maquinado CNC, Fresado, Torno y Soldadura" },
+      { property: "og:title", content: "Servicios y Maquinados Alamo — Maquinado CNC, Fresado, Torno y Soldadura" },
       { property: "og:description", content: "Servicios industriales de maquinado CNC, fresadora, torno y soldadura con precisión milimétrica." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
