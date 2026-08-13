@@ -8,9 +8,10 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { useEffect, useState, type ReactNode } from "react";
-import { Menu, X, Cog } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 import appCss from "../styles.css?url";
+import logoAsset from "../assets/alamo-logo.png.asset.json";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
@@ -78,10 +79,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Maquinados Alamo" },
+      { title: "Servicios y Maquinados Alamo" },
       { name: "description", content: "Servicios de maquinado CNC, fresadora industrial, torno y soldadura con precisión y calidad." },
-      { name: "author", content: "Maquinados Alamo" },
-      { property: "og:title", content: "Maquinados Alamo" },
+      { name: "author", content: "Servicios y Maquinados Alamo" },
+      { property: "og:title", content: "Servicios y Maquinados Alamo" },
       { property: "og:description", content: "Servicios de maquinado CNC, fresadora industrial, torno y soldadura con precisión y calidad." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -97,7 +98,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap",
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.png", type: "image/png" },
     ],
   }),
   shellComponent: RootShell,
@@ -134,8 +135,8 @@ function Header() {
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-2 text-lg font-bold tracking-tight text-foreground">
-          <Cog className="h-6 w-6 text-primary" />
-          <span>Maquinados Alamo</span>
+          <img src={logoAsset.url} alt="Logo Servicios y Maquinados Alamo" className="h-9 w-9 rounded-full bg-white p-0.5" width={36} height={36} />
+          <span>Servicios y Maquinados Alamo</span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -201,8 +202,8 @@ function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           <div>
             <div className="flex items-center gap-2 text-lg font-bold text-foreground">
-              <Cog className="h-6 w-6 text-primary" />
-              <span>Maquinados Alamo</span>
+              <img src={logoAsset.url} alt="Logo Servicios y Maquinados Alamo" className="h-9 w-9 rounded-full bg-white p-0.5" width={36} height={36} />
+              <span>Servicios y Maquinados Alamo</span>
             </div>
             <p className="mt-3 text-sm text-muted-foreground">
               Precisión en maquinado CNC, fresado, torno y soldadura para la industria.
@@ -243,7 +244,7 @@ function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Maquinados Alamo. Todos los derechos reservados.
+          © {new Date().getFullYear()} Servicios y Maquinados Alamo. Todos los derechos reservados.
         </div>
       </div>
     </footer>
