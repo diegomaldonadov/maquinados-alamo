@@ -81,7 +81,7 @@ function ServicesPage() {
           ))}
         </div>
 
-        <section className="mt-20">
+        <section className="mt-20 scroll-mt-24">
           <h2 className="text-center text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             Nuestro trabajo
           </h2>
@@ -94,13 +94,15 @@ function ServicesPage() {
                 <img
                   src={src}
                   alt={`Pieza maquinada ${i + 1} por Servicios y Maquinados Alamo`}
-                  loading="lazy"
+                  loading="eager"
+                  decoding="async"
                   className="aspect-[4/3] w-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
             ))}
           </div>
         </section>
+
 
 
 
