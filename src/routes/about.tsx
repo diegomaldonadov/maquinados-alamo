@@ -29,26 +29,8 @@ function AboutPage() {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-12 lg:grid-cols-2">
-          <div className="rounded-2xl border border-border bg-card p-8">
-            <h2 className="text-2xl font-bold text-card-foreground">Nuestra historia</h2>
-            <div className="mt-6 space-y-4 text-muted-foreground">
-              <p>
-                Desde 2019, Servicios y Maquinados Alamo ha crecido de un pequeño taller de reparación a
-                un centro de manufactura con más de 50 máquinas CNC y un equipo de operadores certificados.
-              </p>
-              <p>
-                Atendemos a clientes de los sectores automotriz, aeroespacial, energético, agrícola
-                y construcción, fabricando piezas que cumplen con especificaciones técnicas exigentes.
-              </p>
-              <p>
-                Nuestra filosofía es simple: cada pieza debe salir del taller con la calidad correcta
-                a la primera, entregada en el tiempo prometido.
-              </p>
-            </div>
-          </div>
-
-          <div className="grid gap-6 sm:grid-cols-2">
+        <div className="mt-16">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <ValueCard
               icon={<Shield className="h-6 w-6" />}
               title="Calidad certificada"
@@ -71,6 +53,7 @@ function AboutPage() {
             />
           </div>
         </div>
+
 
         <div className="mt-16 flex justify-center">
           <div className="w-full max-w-sm rounded-xl border border-border bg-secondary p-8 text-center">
