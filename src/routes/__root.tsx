@@ -238,8 +238,8 @@ function Footer() {
           <div>
             <h3 className="text-sm font-semibold text-foreground">Contacto</h3>
             <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-              <li>Tel: +52 81 1234 5678</li>
-              <li>Email: ventas@metalmecanica.ind</li>
+              <li>Tel: +52 81 1529 0910</li>
+              <li>Email: maquinadosalamo@gmail.com</li>
               <li>Monterrey, Nuevo León, México</li>
             </ul>
           </div>
