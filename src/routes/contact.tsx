@@ -4,7 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useServerFn } from "@tanstack/react-start";
 import { useState } from "react";
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle2 } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Send, CheckCircle2, Instagram, MessageCircle } from "lucide-react";
 
 import { submitContact } from "../lib/contact.functions";
 import { Button } from "@/components/ui/button";
@@ -85,14 +85,49 @@ function ContactPage() {
                   <Phone className="mt-0.5 h-5 w-5 text-primary" />
                   <div>
                     <div className="font-medium text-card-foreground">Teléfono</div>
-                    <div className="text-sm text-muted-foreground">+52 81 1234 5678</div>
+                    <a href="tel:+528115290910" className="text-sm text-muted-foreground hover:text-primary">
+                      81 1529 0910
+                    </a>
+                  </div>
+                </li>
+                <li className="flex items-start gap-4">
+                  <MessageCircle className="mt-0.5 h-5 w-5 text-primary" />
+                  <div>
+                    <div className="font-medium text-card-foreground">WhatsApp</div>
+                    <a
+                      href="https://wa.me/5218115290910"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-muted-foreground hover:text-primary"
+                    >
+                      +52 1 81 1529 0910
+                    </a>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
                   <Mail className="mt-0.5 h-5 w-5 text-primary" />
                   <div>
                     <div className="font-medium text-card-foreground">Email</div>
-                    <div className="text-sm text-muted-foreground">ventas@metalmecanica.ind</div>
+                    <a
+                      href="mailto:maquinadosalamo@gmail.com"
+                      className="text-sm text-muted-foreground hover:text-primary break-all"
+                    >
+                      maquinadosalamo@gmail.com
+                    </a>
+                  </div>
+                </li>
+                <li className="flex items-start gap-4">
+                  <Instagram className="mt-0.5 h-5 w-5 text-primary" />
+                  <div>
+                    <div className="font-medium text-card-foreground">Instagram</div>
+                    <a
+                      href="https://instagram.com/symalamo"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-muted-foreground hover:text-primary"
+                    >
+                      @symalamo
+                    </a>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
