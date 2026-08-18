@@ -135,7 +135,6 @@ function ContactPage() {
                   <div>
                     <div className="font-medium text-card-foreground">Dirección</div>
                     <div className="text-sm text-muted-foreground">
-                      Av. Industrial 1500, Parque Industrial Norte<br />
                       Monterrey, Nuevo León, México
                     </div>
                   </div>
